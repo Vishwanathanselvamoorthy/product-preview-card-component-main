@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(32, 37%, 92%);
+  padding: 20px;
+  /* position: fixed; */
+}
+
+.card-container {
+  /* padding: 20px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container #large-screen-image {
+  display: none;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.content-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.content-container p {
+  margin: 15px 0px 15px 0px;
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #94949c;
+  font-weight: 500;
+}
+.content-container h1 {
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+  font-family: Fraunces;
+  color: #1c2628;
+}
+
+.content-container #main-para {
+  margin: 15px 0px 15px 0px;
+  color: #94949c;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.content-container .price-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0px 15px 0px;
+}
+
+.content-container h2 {
+  color: #3d8168;
+  font-family: Fraunces;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.content-container #line-para {
+  text-decoration: line-through;
+  color: #94949c;
+  font-weight: 500;
+}
+
+.content-container button {
+  width: 100%;
+  border: none;
+  background-color: #3d8168;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.content-container button:hover {
+  background-color: #1a4031;
+}
+
+.content-container button i {
+  padding: 0px 10px 0px 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card-container {
+    /* padding: 20px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .img-container #large-screen-image {
+    display: block;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .img-container #small-screen-image {
+    display: none;
+  }
+}
